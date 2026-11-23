@@ -98,9 +98,9 @@ if let pod_archive_path = ProcessInfo.processInfo.environment["ORT_POD_LOCAL_PAT
     // ORT release
     package.targets.append(
        Target.binaryTarget(name: "onnxruntime",
-                           url: "https://github.com/kevinxo328/onnxruntime-swift-package-manager-mirror/releases/download/1.20.0/pod-archive-onnxruntime-c-1.20.0.zip",
+                           url: "https://github.com/kevinxo328/onnxruntime-swift-package-manager-mirror/releases/download/1.20.0/pod-archive-onnxruntime-c-1.20.0-mirror.zip",
                            // SHA256 checksum
-                           checksum: "0036284bc6ac0a20149e5db6bad27c9a3374c75b012c993de81c6d88f42e3142")
+                           checksum: "4cbfc7e21c4137e49b32a6688e67d08ffc51ad06399f87764184f29d157bb404")
     )
 }
 
@@ -110,8 +110,8 @@ if let ext_pod_archive_path = ProcessInfo.processInfo.environment["ORT_EXTENSION
     // ORT Extensions release
     package.targets.append(
         Target.binaryTarget(name: "onnxruntime_extensions",
-                            url: "https://github.com/kevinxo328/onnxruntime-swift-package-manager-mirror/releases/download/1.20.0/pod-archive-onnxruntime-extensions-c-0.13.0.zip",
+                            url: "https://github.com/kevinxo328/onnxruntime-swift-package-manager-mirror/releases/download/1.20.0/pod-archive-onnxruntime-extensions-c-0.13.0-mirror.zip",
                             // SHA256 checksum
-                            checksum: "542e32294f3e9c4b283050a414229f50242e2c0df7ac525cc408fd917e2a6532")
+                            checksum: "01c06a798bb865316b1b310c13dd48fcc32e1f5fec0af05a58957b6205fbfa54")
     )
 }
